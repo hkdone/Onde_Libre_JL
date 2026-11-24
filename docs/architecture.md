@@ -7,7 +7,8 @@
 
 ## 1. Vue d'ensemble & Architecture en 4 couches
 
-L'application centralise le pilotage éditorial, les invités, la diffusion et les campagnes sponsors d'Onde Libre Studio sur une base relationnelle unique sécurisée par rôles.
+L'application centralise le pilotage éditorial, les invités, la diffusion et les campagnes sponsors d'Onde Libre Studio sur une base relationnelle unique sécurisée par rôles.  
+**Environnement de réalisation** *(accord pédagogique validé)* : **Google Antigravity** (IDE agentique) propulsé par **Gemini** avec mémoire projet `GEMINI.md`, en substitution de Claude Code et Claude Design tout en conservant les mêmes exigences méthodologiques et RNCP.
 
 ```mermaid
 flowchart LR
@@ -99,7 +100,7 @@ erDiagram
 
 ## 5. Interfaces clés prévues (C9)
 
-L'application livrera au minimum **3 écrans métier connectés** (+ écran de connexion Supabase Auth) maquettable sous Claude Design avec tokens initialisés via TweakCN :
+L'application livrera au minimum **3 écrans métier connectés** (+ écran de connexion Supabase Auth), conçus avec un Design System structuré (tokens initialisés via **TweakCN** et maquettes/prototypes interactifs réalisés avec **Gemini** dans **Google Antigravity**, en substitution validée de Claude Design) :
 1. **Écran Gestion des Épisodes & Pipeline** : vue Kanban/liste par les 5 statuts (`idée` → `publié`), changement de statut fluide, indicateurs visuels **couleur + icône + libellé** (WCAG AA) distinguant ce qui avance de ce qui bloque (`notes_blocage`), actions conditionnées au rôle.
 2. **Écran Gestion des Invités** : annuaire filtrable (visible selon rôle), fiche détaillée (coordonnées protégées, canal de contact) et **historique complet de participation aux épisodes**.
 3. **Vue de Pilotage Direction** : tableau de bord synthétique pour Camille (compteurs par statut, épisodes en cours, à venir, publiés, derniers chiffres d'audience consolidés, accès au suivi des campagnes sponsors).
@@ -134,7 +135,7 @@ L'application livrera au minimum **3 écrans métier connectés** (+ écran de c
 
 ```text
 Formation Cube/
-├── GEMINI.md                        # Mémoire projet IA (< 200 lignes)
+├── GEMINI.md                        # Mémoire projet lue automatiquement par Google Antigravity / Gemini (< 200 lignes)
 ├── README.md                        # Présentation, installation, lancement (Étape 6)
 ├── CHANGELOG.md                     # Journal des modifications (Étape 6)
 ├── .env.example                     # Modèle des variables d'environnement (sans secrets)

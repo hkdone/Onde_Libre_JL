@@ -19,7 +19,7 @@
 - Effet recherché vs anciens outils dispersés + écarts assumés entre maquettes et écrans livrés.
 
 **Notes d'étape :**
-- *Décisions déjà prises au Jalon 1* : respect des critères d'accessibilité WCAG AA (contraste ≥ 4.5:1, taille 16 px, **jamais la couleur seule** pour les 5 statuts du pipeline : pastille + icône + libellé), organisation selon les principes de Gestalt et divulgation progressive.
+- *Décisions déjà prises au Jalon 1* : conception du Design System et des maquettes via **TweakCN + Gemini dans Google Antigravity** (adaptation validée pédagogiquement en substitution de Claude Design) ; respect des critères d'accessibilité WCAG AA (contraste ≥ 4.5:1, taille 16 px, **jamais la couleur seule** pour les 5 statuts du pipeline : pastille + icône + libellé), organisation selon les principes de Gestalt et divulgation progressive.
 - *À compléter à l'Étape 3 (Jalon 2)* : capture maquette/livré, parcours changement de statut, justification des écarts constatés.
 
 ---
@@ -71,7 +71,8 @@
 
 **Brouillon amorcé au Jalon 1 :**
 - *Dès l'Étape 1, la documentation et la reprise sont posées comme fondations* :
-  - `GEMINI.md` (< 200 lignes à la racine) fixe de façon persistante l'architecture, les conventions de nommage, la stack, le rythme par jalons et les interdits explicites (ex. interdiction de contourner la RLS côté UI ou d'exposer des clés côté client), évitant toute dérive de l'agent IA d'une session à l'autre.
+  - **Arbitrage d'outillage documenté** : avec l'accord des responsables pédagogiques, l'environnement **Google Antigravity + Gemini** est utilisé en substitution de Claude Code et Claude Design. Cet arbitrage démontre la portabilité des méthodes apprises (cadrage amont, hygiène de contexte, Design System, sécurité RLS).
+  - `GEMINI.md` (< 200 lignes à la racine, équivalent natif d'`agent.md` / `CLAUDE.md`) fixe de façon persistante l'architecture, les conventions de nommage, la stack, le rythme par jalons et les interdits explicites (ex. interdiction de contourner la RLS côté UI ou d'exposer des clés côté client), évitant toute dérive de l'agent IA d'une session à l'autre.
   - `docs/architecture.md` formalise les choix techniques (schéma relationnel, matrice de droits, flux API et gestion d'erreurs) pour tout développeur repreneur.
   - `docs/note-cadrage-direction.md` garantit l'alignement avec Camille Vasseur sans jargon technique.
 - *À compléter à l'Étape 6* : guides d'usage par rôle, procédures de dépannage testées, capture de l'historique des commits/migrations et du `CHANGELOG.md` *(sans aucune URL dans le PDF final)*.

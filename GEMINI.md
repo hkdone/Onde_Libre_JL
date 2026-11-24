@@ -12,9 +12,9 @@
 - `docs/note-cadrage-direction.md` — cadrage non technique pour Camille Vasseur.
 - `docs/dossier-rncp-brouillon.md` & `docs/preuves/README.md` — suivi continu de certification et preuves.
 
-## 3. Stack & outils imposés
-- **IA & Pilotage** : Claude Code / agent IA + Skills (`.claude/skills/`).
-- **Design & Prototypage** : TweakCN (tokens) + Claude Design (Design System, maquettes, handoff bundle).
+## 3. Stack & outils du projet
+- **IDE & Agent IA** : **Google Antigravity** (IDE agentique) + **Gemini** — mémoire projet `GEMINI.md` chargée automatiquement *(accord pédagogique en substitution de Claude Code)*.
+- **Design & Prototypage** : **TweakCN** (tokens) + Design System & maquettes interactives via **Gemini / Google Antigravity** (ou Figma en complément, *accord pédagogique en substitution de Claude Design*).
 - **Base de données, Auth & Sécurité** : **Supabase** (PostgreSQL relationnel + Supabase Auth + **Row Level Security / RLS**).
 - **Intégration externe** : **API externe ou connecteur MCP** (diffusion/audience : RSS Apple Podcasts, Spotify ou Ausha).
 - **Versionnage & Déploiement** : **GitHub** (Git, changelog) + **Markdown** (`docs/`, `README.md`).
@@ -22,7 +22,7 @@
 ## 4. Rythme strict par étapes & jalons
 1. **Étape 1 → Jalon 1** *(sans code)* : `GEMINI.md`, `docs/architecture.md`, `docs/note-cadrage-direction.md`.
 2. **Étape 2** : Modèle Supabase + contraintes + RLS, **versionnés dans `supabase/migrations/`**.
-3. **Étape 3 → Jalon 2** : Design System + maquettes Claude Design + application web connectée (≥ 3 écrans, pipeline statuts).
+3. **Étape 3 → Jalon 2** : Design System + maquettes interactives (TweakCN + Gemini / Google Antigravity) + application web connectée (≥ 3 écrans, pipeline statuts).
 4. **Étape 4 → Jalon 3** : Authentification par compte + 3 rôles + tests prouvant le blocage d'accès.
 5. **Étape 5** : Intégration API/MCP active + gestion des 3 erreurs (indisponible, vide, invalide) + repli + justification écrite.
 6. **Étape 6** : GitHub versionné, mise en production, documentation technique + guide d'usage + dépannage.
@@ -53,7 +53,7 @@
 - **Ne jamais inclure d'URL dans le dossier écrit RNCP** (≤ 20 pages tout compris, dépôt PDF à J-5 + 100 % sur `learning.cube.fr`).
 - **Ignorer totalement `_Projet d'étude/`** (hors sujet).
 
-## 7. Hygiène de session IA
-- **1 session par tâche ou user story** ; éviter les conversations longues (> 40 % de fenêtre → `/compact` orienté, changement de sujet → `/clear`, mauvaise piste → `/rewind`).
+## 7. Hygiène de session IA (Google Antigravity)
+- **1 session par tâche ou user story** ; éviter les conversations longues (> 40 % de contexte → `/compact` pour condenser, nouvelle conversation propre au changement de sujet, `/plan` pour les étapes complexes).
 - Pour une reprise critique : fiche de passation (Objectif, État, Décisions, Pistes écartées, Prochaine étape).
 - Auditer `GEMINI.md` après chaque jalon (*proposer des ajustements sans modifier directement*) pour le maintenir sous **200 lignes**.
