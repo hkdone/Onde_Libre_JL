@@ -75,4 +75,5 @@
   - `GEMINI.md` (< 200 lignes à la racine, équivalent natif d'`agent.md` / `CLAUDE.md`) fixe de façon persistante l'architecture, les conventions de nommage, la stack, le rythme par jalons et les interdits explicites (ex. interdiction de contourner la RLS côté UI ou d'exposer des clés côté client), évitant toute dérive de l'agent IA d'une session à l'autre.
   - `docs/architecture.md` formalise les choix techniques (schéma relationnel, matrice de droits, flux API et gestion d'erreurs) pour tout développeur repreneur.
   - `docs/note-cadrage-direction.md` garantit l'alignement avec Camille Vasseur sans jargon technique.
+  - `README.md`, `CHANGELOG.md` (`v0.1.0`) et `.env.example` posent dès le Jalon 1 les bases de passation, de traçabilité des versions et d'hygiène des secrets (preuve archivée dans `docs/preuves/J1-C14-synthese-jalon-1.md`).
 - *À compléter à l'Étape 6* : guides d'usage par rôle, procédures de dépannage testées, capture de l'historique des commits/migrations et du `CHANGELOG.md` *(sans aucune URL dans le PDF final)*.

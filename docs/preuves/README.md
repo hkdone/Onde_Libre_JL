@@ -12,7 +12,7 @@ Exemples : `J1-C14-arborescence-initiale.png`, `E2-C10-schema-supabase.png`, `J3
 
 | Étape / Jalon | Compétence | Preuves à archiver dans `docs/preuves/` | Question dossier & Plafond visuels | Statut |
 |---|---|---|---|---|
-| **Étape 1 / Jalon 1** | **C14** | Capture de la structure du projet (`GEMINI.md`, `docs/`), extrait de `docs/architecture.md` et `docs/note-cadrage-direction.md` | **Q4** *(2 visuels max au total)* | 🟡 En cours (fichiers créés) |
+| **Étape 1 / Jalon 1** | **C14** | Fiche `J1-C14-synthese-jalon-1.md` + capture optionnelle de l'arborescence (`GEMINI.md`, `docs/`), extraits de `docs/architecture.md` et `docs/note-cadrage-direction.md` | **Q4** *(2 visuels max au total)* | ✅ Prêt pour revue mentor |
 | **Étape 2** | **C10, C13** | Capture du schéma relationnel Supabase (6+ tables et jonctions), preuve des contraintes `UNIQUE`/`CHECK` (test d'insertion invalide rejetée), captures des politiques RLS actives | **Q2** *(3 visuels max)* & **Q3** | ⬜ À faire |
 | **Étape 3 / Jalon 2** | **C9** | Captures des maquettes / prototypes (Design System TweakCN + Gemini / Google Antigravity) + écrans livrés (gestion d'épisode + changement de statut, fiche invité + historique, vue pilotage direction) + adaptation visuelle par rôle + vérif contraste WCAG AA | **Q1** *(3 visuels max)* | ⬜ À faire |
 | **Étape 4 / Jalon 3** | **C13, C9** | Capture de la connexion par compte + **preuve de test d'accès refusé** (utilisateur `diffusion` tentant d'accéder aux données `direction` / `campagnes_sponsors`) | **Q3** *(4 visuels max au total)* | ⬜ À faire |
